@@ -1,3 +1,13 @@
 language: node_js
 node_js:
-  - "node"
+- node
+deploy:
+  provider: s3
+  access_key_id: AKIAISDA67RIJTYGI23Q
+  secret_access_key:
+    secure: JtFVL7ygfH8D3f2TIhmJdp0eTWD4WLuq6QuNJ8WM7IL+Gv96TWiEtuIb92LQvc5WwRRveTJEOzrT931I7XZv5RKw3J4sI6wapvcm3LTh6v8+C9JU55KXzH+aennL1KHUTXfL1uz96yMo+0Tl6CG47EDQM3nn6ApeCZpTeEDYRVl6utN1vN4SnTJ6VFON9AgvhaUdAaRws+EFMwjBmN7kJAhqz6wyDK8StfGmzGL44uxzQut67tmTJPEL8WNQU5eIS3sAV5/w8aQ2ClzoCxOv858983D5uv9Lx2Lneo0DX28T42u5CahMtQPcgRmN8+eJEmBmnRxlNFBySuSKeqsSGKbaKRnN8I6k/nezLxDD+yqG0uGmScLPWWIylv6mjuS4ct0WP+Gf9tlrt70DXM/7KWQXv8TFskaBOM863/qcz7TRVJrOshosTL2bNk2kcyg7ZvstIBC28wNJWbdEGdUO2iPnDGdxWb8MuBeaYVWNmPLX19E8h/Rr9vWa1rMafxUOdpkEIxo/SHuqjSOzbHQxlmVKv6rwSSvt+sfFVriE2UOwdgQZDj5/5OLTZ682aI5Tyu8foWMxOQLn1hTHNblgr2NQRaPuyWAHgXcwhTTu+MvqiP0mftl0pitMVbJTsq9tgjXG4TRUfTrOTkjo+Jdiyv3Cf5l/MQN8W41dRa7dH20=
+  bucket: d2.report
+  skip_cleanup: true
+  local_dir: public
+  acl: public_read
+  cache_control: "max-age=21600"
