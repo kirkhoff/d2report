@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import { ReactComponent as DestinyIcon } from './assets/icons/destiny.svg';
 import './App.css';
+import Crucible from "./Crucible/Crucible";
 
 class App extends Component {
   render() {
@@ -11,9 +12,7 @@ class App extends Component {
           <DestinyIcon/>
           <h1 className="App-title">D2.report</h1>
         </header>
-        <p className="App-intro">
-          Coming soon...
-        </p>
+        <Crucible/>
       </div>
     );
   }
